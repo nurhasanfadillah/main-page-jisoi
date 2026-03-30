@@ -23,8 +23,8 @@ export default function Produk() {
   const filtered = active === "Semua" ? PRODUCTS : PRODUCTS.filter((p) => p.category === active);
 
   return (
-    <section id="produk" className="relative py-20 lg:py-32">
-      <div className="absolute top-0 right-0 w-[600px] h-[400px] bg-cyan-500/5 rounded-full blur-3xl" />
+    <section id="produk" className="relative py-20 lg:py-32 overflow-hidden">
+      <div className="absolute top-0 -right-48 w-[600px] h-[400px] bg-cyan-500/5 rounded-full blur-3xl" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

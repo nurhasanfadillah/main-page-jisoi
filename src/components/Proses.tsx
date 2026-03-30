@@ -40,8 +40,8 @@ const STEPS = [
 
 export default function Proses() {
   return (
-    <section id="proses" className="relative py-20 lg:py-32 bg-navy-900/50">
-      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-royal-500/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/3" />
+    <section id="proses" className="relative py-20 lg:py-32 bg-navy-900/50 overflow-hidden">
+      <div className="absolute top-1/2 -left-48 w-[500px] h-[500px] bg-royal-500/5 rounded-full blur-3xl -translate-y-1/2" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

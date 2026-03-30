@@ -33,7 +33,7 @@ const ITEMS = [
 
 export default function Kredibilitas() {
   return (
-    <section id="kredibilitas" className="relative py-20 lg:py-32 bg-navy-900/50">
+    <section id="kredibilitas" className="relative py-20 lg:py-32 bg-navy-900/50 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-royal-500/5 rounded-full blur-3xl" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

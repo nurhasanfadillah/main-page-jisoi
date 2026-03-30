@@ -5,9 +5,9 @@ import { ArrowDown, Shield, Factory, Package, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg">
-      <div className="absolute top-1/4 left-0 w-96 h-96 bg-royal-500/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-float-delayed" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg w-full">
+      <div className="absolute top-1/4 -left-48 w-96 h-96 bg-royal-500/20 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 -right-40 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-float-delayed" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 text-center">
         <motion.div

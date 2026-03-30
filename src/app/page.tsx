@@ -20,7 +20,7 @@ export default function Home() {
       >
         Skip to main content
       </a>
-      <main id="main-content" className="min-h-screen">
+      <main id="main-content" className="min-h-screen overflow-x-hidden w-full">
         <Navbar />
         <Hero />
         <Kredibilitas />

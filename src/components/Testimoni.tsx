@@ -11,7 +11,7 @@ const TESTIMONIALS = [
 
 export default function Testimoni() {
   return (
-    <section id="testimoni" className="relative py-20 lg:py-32">
+    <section id="testimoni" className="relative py-20 lg:py-32 overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-cyan-500/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
