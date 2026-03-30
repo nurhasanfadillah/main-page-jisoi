@@ -5,11 +5,14 @@ import { ArrowDown, Shield, Factory, Package, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg w-full">
-      <div className="absolute top-1/4 -left-48 w-96 h-96 bg-royal-500/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 -right-40 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-float-delayed" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-bg">
+      {/* Background blur effects - positioned safely within viewport */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-0 w-96 h-96 bg-royal-500/20 rounded-full blur-3xl animate-float -translate-x-1/2" />
+        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-float-delayed translate-x-1/2" />
+      </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,13 +49,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 w-full"
         >
           <a
             href="https://wa.me/6285717561096"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-royal-600 to-cyan-600 rounded-2xl hover:shadow-xl hover:shadow-royal-500/20 transition-all hover:scale-105"
+            className="w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-royal-600 to-cyan-600 rounded-2xl hover:shadow-xl hover:shadow-royal-500/20 transition-all hover:scale-105 text-center"
           >
             Konsultasi Gratis via WhatsApp →
           </a>
@@ -60,7 +63,7 @@ export default function Hero() {
             href="https://shopee.co.id/jisoi.official"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 text-lg font-semibold text-white border border-slate-600 rounded-2xl hover:bg-white/5 transition-all"
+            className="w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white border border-slate-600 rounded-2xl hover:bg-white/5 transition-all text-center"
           >
             Lihat di Shopee
           </a>

@@ -27,13 +27,13 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
           scrolled ? "glass-strong shadow-lg" : "bg-transparent"
         }`}
         role="navigation"
         aria-label="Navigasi utama"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2" aria-label="JISOI - Kembali ke beranda">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-royal-500 to-cyan-500 flex items-center justify-center font-bold text-white" aria-hidden="true">
@@ -95,12 +95,12 @@ export default function Navbar() {
           id="mobile-menu"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="fixed inset-0 z-40 bg-navy-900/98 backdrop-blur-xl md:hidden pt-20"
+          className="fixed inset-0 z-40 bg-navy-900/98 backdrop-blur-xl md:hidden pt-20 overflow-y-auto"
           role="dialog"
           aria-modal="true"
           aria-label="Menu navigasi mobile"
         >
-          <div className="flex flex-col items-center gap-6 p-8">
+          <div className="flex flex-col items-center gap-6 p-8 w-full">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
